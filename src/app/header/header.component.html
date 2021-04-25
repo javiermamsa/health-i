@@ -1,0 +1,71 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" routerLink="/">
+            <img alt="logo" src="/assets/img/logo.jpg" style="height: 50px; border-radius: 50%; object-fit: cover;">
+            <span class="h5 d-inline d-lg-none ms-2 text-white">Health & me</span>
+        </a>
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbar"
+            aria-controls="navbar"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" routerLink="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/estetica" tabindex="-1">Estetica</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/parrucchieri">Parrucchieri</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" routerLink="/massaggio" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Centro Massaggi
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" routerLink="/massaggio" fragment="relax">Relax</a></li>
+                        <li><a class="dropdown-item" routerLink="/massaggio" fragment="thailandese">Thailandese</a></li>
+                        <li><a class="dropdown-item" routerLink="/massaggio" fragment="giapponese">Giapponese</a></li>
+                        <li><a class="dropdown-item" routerLink="/massaggio" fragment="stone">Stone massage</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" routerLink="/spa" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Spa
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" routerLink="/spa" fragment="sauna">Sauna</a></li>
+                        <li><a class="dropdown-item" routerLink="/spa" fragment="bagno-turco">Bagno turco</a></li>
+                        <li><a class="dropdown-item" routerLink="/spa" fragment="cromoterapia">Cromoterapia</a></li>
+                        <li><a class="dropdown-item" routerLink="/spa" fragment="trattamento-viso">Trattamento viso</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" routerLink="/workout" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Workout
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" routerLink="/workout" fragment="pilates">Pilates</a></li>
+                        <li><a class="dropdown-item" routerLink="/workout" fragment="yoga">Yoga</a></li>
+                        <li><a class="dropdown-item" routerLink="/workout" fragment="crossfit">Crossfit</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-light" type="submit">Cerca</button>
+            </form>
+            <a class="d-block ms-lg-3 my-3 my-lg-0 text-white" routerLink="/account">
+                <img src="/assets/img/account.png" alt="account-icon" height="40px" class="d-none d-lg-inline">
+                Accedi
+            </a>
+        </div>
+    </div>
+</nav>
